@@ -1,6 +1,12 @@
 module.exports = {
   mode: "jit",
-  purge: ["./src/*.js", "./public/index.html"],
+  purge: [
+    "./src/Components/Utilities/Form.jsx",
+    "./src/Components/Utilities/PhoneLogin.jsx",
+    "./src/Components/Start.jsx",
+    "./src/Components/Utilities/CodeConfirm.jsx",
+    "./public/index.html",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

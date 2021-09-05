@@ -1,7 +1,21 @@
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import WhiteLogoText from "./Components/svg/WhiteLogoText";
+
+import Start from "./Components/Start";
+
 function App() {
   return (
-    <div className="font-bold px-5 text-3xl bg-blue-800 px-100 text-red-200 py-10">
-      Tinder clone App
+    <div className="max-w-lg overflow-hidden">
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <WhiteLogoText />
+          </Route>
+          <Route path="/start">
+            <Start />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

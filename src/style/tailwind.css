@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-image {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 1)),
+    url("../img/StartPageBg.png");
+  @apply h-screen w-full;
+}
+
+.nav-childs p {
+  @apply hover:text-red-500 hover:border-red-500 bg-gray-50  hover:bg-gray-100 p-2 transition-all duration-200 text-xl border-l-2;
+}
+
+.nav-desktop {
+  @apply md:relative md:left-0 md:bg-transparent md:flex md:h-auto md:space-y-0 md:space-x-3;
+}
+.nav-desktop p {
+  @apply md:bg-transparent md:border-none md:text-white hover:bg-transparent;
+}
+.mobile-nav-childs p {
+  @apply hover:text-red-500 transition-all duration-200;
+}

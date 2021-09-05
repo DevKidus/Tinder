@@ -44,5 +44,9 @@
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.9"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/DevKidus/Tinder.git",
+  "author": "Kidus Abrham <dev.kidusabrham@gmail.com>",
+  "license": "MIT"
 }
